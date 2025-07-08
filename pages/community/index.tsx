@@ -1,14 +1,17 @@
+import withLayoutBasic from "@/libs/components/layout/LayoutBasic";
+import { NextPage } from "next";
 import { useState } from "react";
 
-const Community = () => {
-    console.log("Community component - Pages Router")
+const Community: NextPage = () => {
     const [title, setTitle] = useState<string>('hello');
-    return <div> 
+    return (
+        <div> 
             COMMUNITY
             <button onClick={() => {alert('Hello Mr.Khan!')}} style={{margin: "15px"}}>
                 pressMe
             </button>
         </div>
+    );
 };
 
-export default Community;
+export default withLayoutBasic(Community);
