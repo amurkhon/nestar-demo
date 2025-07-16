@@ -1,0 +1,1 @@
+export const propertySquare = [45, 65, 90, 100];
