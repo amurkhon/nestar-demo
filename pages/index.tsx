@@ -9,9 +9,15 @@ import PopularProperties from "@/libs/components/homepage/PopularProperties";
 import Advertisement from "@/libs/components/homepage/Advertisement";
 import TopProperties from "@/libs/components/homepage/TopProperties";
 import TopAgents from "@/libs/components/homepage/TopAgents";
+import useDeviceDetect from "@/libs/hooks/useDeviceDetect";
 
 const Home: NextPage = () => {
-  return (
+  const device = useDeviceDetect();
+
+  if(device == "mobile") {
+    return <Stack>HomePage Mobile</Stack>
+  } else {
+    return (
       <Stack className={"home-page"}>
         <TrendProperties />
         <PopularProperties />
@@ -19,7 +25,8 @@ const Home: NextPage = () => {
         <TopProperties />
         <TopAgents />
       </Stack>
-  );
+    );
+  }
 };
 
 export default withLayoutMain(Home);

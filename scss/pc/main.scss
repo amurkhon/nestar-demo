@@ -3,98 +3,95 @@
 @import '/scss/pc/homepage/homepage.scss';
 @import '/scss/pc/property/property.scss';
 @import '/scss/pc/property/detail.scss';
-
-  
-
 #pc-wrap {
     #top {
-    .navbar {
-        .navbar-main {
-            position: fixed;
-            padding: 22px 0px;
-            width: 100%;
-            height: 87px;
-            display: flex;
-            flex-direction: row;
-            box-sizing: border-box;
-            z-index: 99;
-            align-items: center;
-            border-top: 1px solid rgba(255, 255, 255, 0.07);
-
-            &.transparent {
-                background-color: #181a209e;
-            }
-            }
-
-            .container {
+        .navbar {
+            .navbar-main {
+                position: fixed;
+                padding: 22px 0px;
+                width: 100%;
+                height: 87px;
+                display: flex;
                 flex-direction: row;
+                box-sizing: border-box;
+                z-index: 99;
                 align-items: center;
-                justify-content: space-between;
+                border-top: 1px solid rgba(255, 255, 255, 0.07);
 
-                .logo-box {
-                    img {
-                    width: 150px;
-                    cursor: pointer;
-                    }
+                &.transparent {
+                    background-color: #181a209e;
+                }
                 }
 
-                .router-box {
-                    position: relative;
-                    width: 617px;
-                    display: flex;
+                .container {
                     flex-direction: row;
+                    align-items: center;
                     justify-content: space-between;
-                    div {
-                        position: relative;
-                        color: #eeeeeeed;
-                        font-family: 'san-serif';
-                        font-size: 15px;
-                        font-style: normal;
-                        font-weight: 600;
-                        line-height: normal;
-                        cursor: pointer;
-                    }
-                }
 
-                .user-box {
-                    width: 270px;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: flex-end;
-                    .join-box {
-                        width: 184px;
-                        height: 47px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        border-radius: 60px;
-                        border: 1px solid #ffffff;
+                    .logo-box {
+                        img {
+                        width: 150px;
                         cursor: pointer;
-                        svg {
-                            color: #ffffff;
-                            margin-right: 10px;
                         }
-                        span {
+                    }
+
+                    .router-box {
+                        position: relative;
+                        width: 617px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        div {
+                            position: relative;
+                            color: #eeeeeeed;
                             font-family: 'san-serif';
-                            font-size: 14px;
+                            font-size: 15px;
                             font-style: normal;
                             font-weight: 600;
                             line-height: normal;
-                            color: #ffffff;
+                            cursor: pointer;
                         }
                     }
-                    .login-user {
-                        img {
-                            width: 42px;
-                            height: 42px;
-                            border-radius: 50%;
-                            object-fit: cover;
+
+                    .user-box {
+                        width: 270px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-end;
+                        .join-box {
+                            width: 184px;
+                            height: 47px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 60px;
+                            border: 1px solid #ffffff;
+                            cursor: pointer;
+                            svg {
+                                color: #ffffff;
+                                margin-right: 10px;
+                            }
+                            span {
+                                font-family: 'san-serif';
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 600;
+                                line-height: normal;
+                                color: #ffffff;
+                            }
+                        }
+                        .login-user {
+                            img {
+                                width: 42px;
+                                height: 42px;
+                                border-radius: 50%;
+                                object-fit: cover;
+                            }
                         }
                     }
                 }
             }
         }
-    }
     .header-main {
         position: relative;
         width: 100%;
